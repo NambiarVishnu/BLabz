@@ -3,6 +3,7 @@ package com.project.assignment;
 import java.util.Scanner;
 import com.project.assignment.day1.*;
 import com.project.assignment.day2.OddEven;
+import com.project.assignment.day5.Factorial;
 
 import static com.project.assignment.day1.Average.average;
 import static com.project.assignment.day1.KmtoMiles.convert;
@@ -20,7 +21,15 @@ import static com.project.assignment.day3.Circle.circle;
 import static com.project.assignment.day3.IntOpt.opt;
 import static com.project.assignment.day3.Places.place;
 import static com.project.assignment.day3.Print.reverse;
+import static com.project.assignment.day3.SchoolResult.calculateClassSummary;
+import static com.project.assignment.day3.SchoolResult.displayStudentResults;
 import static com.project.assignment.day3.TempConversion.coversion;
+import static com.project.assignment.day4.EvenOdd.evenOdd;
+import static com.project.assignment.day4.LeapYear.year;
+import static com.project.assignment.day5.Factorial.factorial;
+import static com.project.assignment.day5.PowerOf2.power;
+import static com.project.assignment.day5.Prime.prime;
+import static com.project.assignment.day5.PrimeRange.range;
 
 public class Main {
     public static void main(String[] args) {
@@ -131,8 +140,86 @@ public class Main {
 //        float result=sc.nextFloat();
 //        coversion(result);
 
-        circle(5.0f);
+//        circle(5.0f);
+
+        String schoolName = "New School Of Learning";
+        String className = "Class XI";
+
+        // Input for 3 students
+        System.out.print("Enter name of Student 1: ");
+        String student1 = sc.nextLine();
+        System.out.println("Enter marks for " + student1 + " (out of 50):");
+        System.out.print("Physics: ");
+        double physics1 = sc.nextDouble();
+        System.out.print("Chemistry: ");
+        double chemistry1 = sc.nextDouble();
+        System.out.print("Mathematics: ");
+        double maths1 = sc.nextDouble();
+        sc.nextLine();
+        System.out.print("\nEnter name of Student 2: ");
+        String student2 = sc.nextLine();
+        System.out.println("Enter marks for " + student2 + " (out of 50):");
+        System.out.print("Physics: ");
+        double physics2 = sc.nextDouble();
+        System.out.print("Chemistry: ");
+        double chemistry2 = sc.nextDouble();
+        System.out.print("Mathematics: ");
+        double maths2 = sc.nextDouble();
+        sc.nextLine();
+
+        System.out.print("\nEnter name of Student 3: ");
+        String student3 = sc.nextLine();
+        System.out.println("Enter marks for " + student3 + " (out of 50):");
+        System.out.print("Physics: ");
+        double physics3 = sc.nextDouble();
+        System.out.print("Chemistry: ");
+        double chemistry3 = sc.nextDouble();
+        System.out.print("Mathematics: ");
+        double maths3 = sc.nextDouble();
+        sc.nextLine();
+
+        displayStudentResults(schoolName, student1, className, physics1, chemistry1, maths1);
+        displayStudentResults(schoolName, student2, className, physics2, chemistry2, maths2);
+        displayStudentResults(schoolName, student3, className, physics3, chemistry3, maths3);
+
+        calculateClassSummary(physics1, chemistry1, maths1,
+                physics2, chemistry2, maths2,
+                physics3, chemistry3, maths3);
+
+        sc.close();
+    }
+
+
+
+
+
+        /*---------------------------DAY-4--------------------------*/
+
+//        evenOdd(6);
+
+//        boolean result=year(2000);
+//        System.out.println("LeapYear? "+result);
+
+
+
+
+
+
+
+        /*----------------------------DAY-5-----------------------------*/
+//        int n=sc.nextInt();
+//        power(n);
+
+//        int n=sc.nextInt();
+//        factorial(n);
+
+//        int n=sc.nextInt();
+//        boolean result=prime(n);
+//        System.out.println(result);
+
+//        int n=sc.nextInt();
+//        range(n);
+
 
 
     }
-}
