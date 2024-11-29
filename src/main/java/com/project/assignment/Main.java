@@ -3,6 +3,7 @@ package com.project.assignment;
 import java.util.Scanner;
 import com.project.assignment.day1.*;
 import com.project.assignment.day2.OddEven;
+import com.project.assignment.day4.SpringSeason;
 import com.project.assignment.day5.Factorial;
 
 import static com.project.assignment.day1.Average.average;
@@ -24,8 +25,16 @@ import static com.project.assignment.day3.Print.reverse;
 import static com.project.assignment.day3.SchoolResult.calculateClassSummary;
 import static com.project.assignment.day3.SchoolResult.displayStudentResults;
 import static com.project.assignment.day3.TempConversion.coversion;
+import static com.project.assignment.day4.Discount.discount;
 import static com.project.assignment.day4.EvenOdd.evenOdd;
+import static com.project.assignment.day4.Largest3.largest;
 import static com.project.assignment.day4.LeapYear.year;
+import static com.project.assignment.day4.Month.month;
+import static com.project.assignment.day4.Percentage.percentage;
+import static com.project.assignment.day4.Season.seasonM;
+import static com.project.assignment.day4.SpringSeason.season;
+import static com.project.assignment.day4.SwitchArithmetic.arithmetic;
+import static com.project.assignment.day4.Vowels.vowels;
 import static com.project.assignment.day5.Factorial.factorial;
 import static com.project.assignment.day5.PowerOf2.power;
 import static com.project.assignment.day5.Prime.prime;
@@ -34,7 +43,7 @@ import static com.project.assignment.day5.PrimeRange.range;
 public class Main {
     public static void main(String[] args) {
 
-       // System.out.println("Welcome to Bridgelabz!");
+        // System.out.println("Welcome to Bridgelabz!");
 
 //        Add instance =new Add();
 //        int result=instance.add(5,6);
@@ -53,7 +62,7 @@ public class Main {
 //        float result=instance.cylinder(5.2f,6.8f);
 //        System.out.println(result);
 
-           Scanner sc =new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the principal amount:");
 //        int principal=sc.nextInt();
 //        System.out.println("Enter the interest rate :");
@@ -142,52 +151,52 @@ public class Main {
 
 //        circle(5.0f);
 
-        String schoolName = "New School Of Learning";
-        String className = "Class XI";
-
-        // Input for 3 students
-        System.out.print("Enter name of Student 1: ");
-        String student1 = sc.nextLine();
-        System.out.println("Enter marks for " + student1 + " (out of 50):");
-        System.out.print("Physics: ");
-        double physics1 = sc.nextDouble();
-        System.out.print("Chemistry: ");
-        double chemistry1 = sc.nextDouble();
-        System.out.print("Mathematics: ");
-        double maths1 = sc.nextDouble();
-        sc.nextLine();
-        System.out.print("\nEnter name of Student 2: ");
-        String student2 = sc.nextLine();
-        System.out.println("Enter marks for " + student2 + " (out of 50):");
-        System.out.print("Physics: ");
-        double physics2 = sc.nextDouble();
-        System.out.print("Chemistry: ");
-        double chemistry2 = sc.nextDouble();
-        System.out.print("Mathematics: ");
-        double maths2 = sc.nextDouble();
-        sc.nextLine();
-
-        System.out.print("\nEnter name of Student 3: ");
-        String student3 = sc.nextLine();
-        System.out.println("Enter marks for " + student3 + " (out of 50):");
-        System.out.print("Physics: ");
-        double physics3 = sc.nextDouble();
-        System.out.print("Chemistry: ");
-        double chemistry3 = sc.nextDouble();
-        System.out.print("Mathematics: ");
-        double maths3 = sc.nextDouble();
-        sc.nextLine();
-
-        displayStudentResults(schoolName, student1, className, physics1, chemistry1, maths1);
-        displayStudentResults(schoolName, student2, className, physics2, chemistry2, maths2);
-        displayStudentResults(schoolName, student3, className, physics3, chemistry3, maths3);
-
-        calculateClassSummary(physics1, chemistry1, maths1,
-                physics2, chemistry2, maths2,
-                physics3, chemistry3, maths3);
-
-        sc.close();
-    }
+//        String schoolName = "New School Of Learning";
+//        String className = "Class XI";
+//
+//        // Input for 3 students
+//        System.out.print("Enter name of Student 1: ");
+//        String student1 = sc.nextLine();
+//        System.out.println("Enter marks for " + student1 + " (out of 50):");
+//        System.out.print("Physics: ");
+//        double physics1 = sc.nextDouble();
+//        System.out.print("Chemistry: ");
+//        double chemistry1 = sc.nextDouble();
+//        System.out.print("Mathematics: ");
+//        double maths1 = sc.nextDouble();
+//        sc.nextLine();
+//        System.out.print("\nEnter name of Student 2: ");
+//        String student2 = sc.nextLine();
+//        System.out.println("Enter marks for " + student2 + " (out of 50):");
+//        System.out.print("Physics: ");
+//        double physics2 = sc.nextDouble();
+//        System.out.print("Chemistry: ");
+//        double chemistry2 = sc.nextDouble();
+//        System.out.print("Mathematics: ");
+//        double maths2 = sc.nextDouble();
+//        sc.nextLine();
+//
+//        System.out.print("\nEnter name of Student 3: ");
+//        String student3 = sc.nextLine();
+//        System.out.println("Enter marks for " + student3 + " (out of 50):");
+//        System.out.print("Physics: ");
+//        double physics3 = sc.nextDouble();
+//        System.out.print("Chemistry: ");
+//        double chemistry3 = sc.nextDouble();
+//        System.out.print("Mathematics: ");
+//        double maths3 = sc.nextDouble();
+//        sc.nextLine();
+//
+//        displayStudentResults(schoolName, student1, className, physics1, chemistry1, maths1);
+//        displayStudentResults(schoolName, student2, className, physics2, chemistry2, maths2);
+//        displayStudentResults(schoolName, student3, className, physics3, chemistry3, maths3);
+//
+//        calculateClassSummary(physics1, chemistry1, maths1,
+//                physics2, chemistry2, maths2,
+//                physics3, chemistry3, maths3);
+//
+//
+//    }
 
 
 
@@ -219,7 +228,43 @@ public class Main {
 
 //        int n=sc.nextInt();
 //        range(n);
+//        System.out.println("Enter the month");
+//        int month = sc.nextInt();
+//        System.out.println("Enter the day");
+//        int day = sc.nextInt();
+//
+//        boolean result = season(month, day);
+//        System.out.println("SpringSeason :" + result);
+//    }
+//        int number = sc.nextInt();
+//        month(number);
+
+//        int number=sc.nextInt();
+//        percentage(number);
 
 
 
+//        int a=sc.nextInt();
+//        int b= sc.nextInt();
+//        int c=sc.nextInt();
+//        int result=largest( a, b, c);
+//        System.out.println("The largest number is: " +result);
+
+//        int amount=sc.nextInt();
+//        discount(amount);
+
+//        int a= sc.nextInt();
+//        int b= sc.nextInt();
+//        char z=sc.next().charAt(0);
+//
+//        arithmetic(a,b,z);
+
+
+//        char z=sc.next().charAt(0);
+//        vowels(z);
+
+        seasonM(11);
+
+
+    }
     }
