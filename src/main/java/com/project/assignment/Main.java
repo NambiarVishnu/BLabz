@@ -5,6 +5,7 @@ import com.project.assignment.day1.*;
 import com.project.assignment.day2.OddEven;
 import com.project.assignment.day4.SpringSeason;
 import com.project.assignment.day5.Factorial;
+import com.project.assignment.day6.JvmMemoryUsage;
 
 import static com.project.assignment.day1.Average.average;
 import static com.project.assignment.day1.KmtoMiles.convert;
@@ -35,10 +36,20 @@ import static com.project.assignment.day4.Season.seasonM;
 import static com.project.assignment.day4.SpringSeason.season;
 import static com.project.assignment.day4.SwitchArithmetic.arithmetic;
 import static com.project.assignment.day4.Vowels.vowels;
+import static com.project.assignment.day5.Armstrong.isArmstrong;
 import static com.project.assignment.day5.Factorial.factorial;
+import static com.project.assignment.day5.Fibonacci.fib;
 import static com.project.assignment.day5.PowerOf2.power;
 import static com.project.assignment.day5.Prime.prime;
 import static com.project.assignment.day5.PrimeRange.range;
+import static com.project.assignment.day5.Reverse.reverseNumber;
+import static com.project.assignment.day6.StackOverflow.recursiveFunction;
+import static com.project.assignment.day8.CountVowCons.vowelConstant;
+import static com.project.assignment.day8.DuplicateString.duplicate;
+import static com.project.assignment.day8.LargestWord.largestW;
+import static com.project.assignment.day8.Palindrome.palindrome;
+import static com.project.assignment.day8.ReverseString.reverseString;
+import static com.project.assignment.day8.Toggle.togglee;
 
 public class Main {
     public static void main(String[] args) {
@@ -263,7 +274,52 @@ public class Main {
 //        char z=sc.next().charAt(0);
 //        vowels(z);
 
-        seasonM(11);
+//        seasonM(11);
+
+//        fib(10);
+//       int result= reverseNumber(1921);
+//        System.out.println(result);
+
+//        primeFactors(50);
+
+//        if (isArmstrong(13)) {
+//            System.out.println( " Is an Armstrong number.");
+//        } else {
+//            System.out.println(" Is not an Armstrong number.");
+//        }
+
+        /****************************************DAY-6***************************************/
+
+//        JvmMemoryUsage instance =new JvmMemoryUsage();
+//        instance.jvm();
+
+//        try {
+//            recursiveFunction();
+//        } catch (StackOverflowError e) {
+//            System.out.println("StackOverflowError caught!");
+//        }
+
+
+
+
+        /*************************DAY-8***********************/
+
+//        vowelConstant("adArsh");
+
+//        String result=reverseString("Vishnu");
+//        System.out.println(result);
+
+//        boolean result=palindrome("aabaa");
+//        System.out.println(result);
+
+//        String result=duplicate("Vvishnuu");
+//        System.out.println(result);
+
+//        String result=largestW("I am Vishnu");
+//        System.out.println(result);
+
+//        String result=togglee("VishnU");
+//        System.out.println(result);
 
 
     }
