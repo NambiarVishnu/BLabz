@@ -6,6 +6,7 @@ import com.project.assignment.day2.OddEven;
 import com.project.assignment.day4.SpringSeason;
 import com.project.assignment.day5.Factorial;
 import com.project.assignment.day6.JvmMemoryUsage;
+import com.project.assignment.day8.FrequentCharacter;
 
 import static com.project.assignment.day1.Average.average;
 import static com.project.assignment.day1.KmtoMiles.convert;
@@ -50,6 +51,8 @@ import static com.project.assignment.day8.LargestWord.largestW;
 import static com.project.assignment.day8.Palindrome.palindrome;
 import static com.project.assignment.day8.ReverseString.reverseString;
 import static com.project.assignment.day8.Toggle.togglee;
+import static com.project.assignment.day9.TemperatureConverter.celsius;
+import static com.project.assignment.day9.TemperatureConverter.fahrenheit;
 
 public class Main {
     public static void main(String[] args) {
@@ -320,6 +323,21 @@ public class Main {
 
 //        String result=togglee("VishnU");
 //        System.out.println(result);
+
+        FrequentCharacter instance=new FrequentCharacter();
+        char result=instance.frequent("ababbb");
+        System.out.println("Most frequent Character:" +result);
+
+
+
+        /****************************************DAY-9***********************************************/
+
+//        int i=50;
+//        double celAns=fahrenheit(i);
+//        System.out.println("Fahrenheit: "+celAns);
+//        double fahAns=celsius(i);
+//        System.out.println("Celsius: "+fahAns);
+
 
 
     }
