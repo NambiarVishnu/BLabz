@@ -7,4 +7,9 @@ public class Fahrenheit {
         F=(celsius * 9/5) + 32;
         return F;
     }
+    public double Celsius(double fahrebheit){
+        double C;
+        C=(fahrebheit - 32)*5/9;
+        return C;
+    }
 }

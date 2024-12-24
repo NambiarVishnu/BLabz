@@ -16,8 +16,6 @@ public class JvmMemoryUsage {
         for (int i = 0; i < intArray.length; i++) {
             intArray[i] = Integer.valueOf(i);
         }
-
-        // Print the memory status after object creation
         long memoryAfter = runtime.totalMemory() - runtime.freeMemory();
         System.out.println("Memory used after creating objects: " + memoryAfter + " bytes");
 
